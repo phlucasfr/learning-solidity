@@ -12,4 +12,4 @@ pragma solidity >=0.7.0 <0.9.0;
 // import "filename";
 // import "filename" as symbolName;
 // import {symbol1 as alias, symbol2} from "filename";
-import * as Coin from "introduction-to-smart-contrats/subcurrency_example.sol";
+import "introduction-to-smart-contrats/subcurrency_example.sol" as Coin;

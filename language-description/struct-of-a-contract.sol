@@ -1,6 +1,17 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.7.0 <0.9.0;
 
+
+// Events are convenience interfaces with the EVM logging facilities.
+event HighetBidIncreased(address bidder, uint amount); // event
+
+contract SimpleAuction {
+    function bid() public payable {
+        
+        emit HighetBidIncreased(msg.sender, msg.value);
+    }
+}
+
 contract SimpleStorage {
     uint256 storedData; // State variable
 
